@@ -1,17 +1,15 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - Entry point
  *
- * Description: Prints a message to the standard error
- *
- * Return: Always 1 (error)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
-	write(2, message, 59);
+    fprintf(stderr, "%s", quote);
 
-	return (1);
+    return (0);
 }
