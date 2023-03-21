@@ -4,17 +4,7 @@
  * Description: You are not allowed to include standard libraries.
  * Return: 0
  */
-int main(void)
-{
-	char putchar[] = "_putchar";
-	int i = 0;
-
-	while (putchar[i] != '\0')
-	{
-		putchar(putchar[i]);
-		i++;
-	}
-	_putchar('\n');
-
-	return (0);
+int main() {
+    printf("_putchar\n");
+    return 0;
 }
