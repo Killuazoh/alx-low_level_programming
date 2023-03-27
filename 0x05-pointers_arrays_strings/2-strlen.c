@@ -4,14 +4,16 @@
  * _strlen - Returns the length of a string.
  * @str: string.
  *
- * Return: length.
+ * Return: leng
+ *
+
  */
-size_t _strlen(const char *str)
+int _strlen(char *s)
 {
-	size_t len = 0;
+	int c;
 
-	while (*str++)
-		len++;
+	for (c = 0; s[c] != '\0'; c++)
+		;
 
-	return (len);
+	return (c);
 }
